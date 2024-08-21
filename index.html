@@ -17,6 +17,13 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                primary: '#ABEF5F',
+                secondary: '#d4f6ae',
+                'primary-hover': '#7fd31e',
+                'heading-color': '#212121',
+                'content-color': '#737373',
+                'content-hover': '#494949',
+                'button-color': '#1C1C1C',
               }
             }
           }
@@ -24,10 +31,62 @@
       </script>
       <!-- custom css -->
        <style>
-
+            @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+            body{
+                font-family: "Manrope", sans-serif;
+            }
        </style>
 </head>
 <body>
-    
+    <header class="header-area py-8">
+        <div class="container mx-auto">
+          <nav class="navbar justify-between">
+            <div class="">
+              <h2 class="btn btn-ghost hover:bg-transparent text-4xl font-extrabold"><i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary -rotate-45"></i>Rinterio</h2>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="text-content-color font-bold text-base hover:text-heading-color">Home</a></li>
+                <li><a class="text-content-color font-bold text-base hover:text-heading-color">Services</a></li>
+                <li><a class="text-content-color font-bold text-base hover:text-heading-color">Portfolio</a></li>
+                <li><a class="text-content-color font-bold text-base hover:text-heading-color">Blogs</a></li>
+                <li><a class="text-content-color font-bold text-base hover:text-heading-color">Contact</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="sm:flex items-center space-x-3 hidden ">
+                <i class="fa-solid fa-magnifying-glass text-xl border flex justify-center items-center h-8 w-8 rounded-full text-content-color border-none cursor-pointer hover:text-heading-color"></i>
+                <i class="fa-solid fa-cart-shopping text-xl border flex justify-center items-center h-8 w-8 rounded-full text-content-color border-none cursor-pointer hover:text-heading-color"></i>
+                <button class="btn bg-primary text-base font-bold rounded-3xl hover:bg-primary-hover">Book Consult <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-button-color text-white border-none -rotate-45"></i></button>
+              </div>
+              <!-- dropdown -->
+              <div class="dropdown relative">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-48 p-4 shadow absolute right-[8%]">
+                  <li><a class="text-content-color font-bold text-base hover:text-heading-color">Home</a></li>
+                  <li><a class="text-content-color font-bold text-base hover:text-heading-color">Services</a></li>
+                  <li><a class="text-content-color font-bold text-base hover:text-heading-color">Portfolio</a></li>
+                  <li><a class="text-content-color font-bold text-base hover:text-heading-color">Blogs</a></li>
+                  <li><a class="text-content-color font-bold text-base hover:text-heading-color">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+        </div>
+    </header>
 </body>
 </html>
