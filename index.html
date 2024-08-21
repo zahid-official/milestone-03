@@ -33,6 +33,7 @@
        <style>
             @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
             body{
+                /* color: #; */
                 font-family: "Manrope", sans-serif;
             }
        </style>
@@ -94,7 +95,7 @@
                   <div class="banner-cover flex justify-center">
                     <img src="images/1.banner.png" alt="banner">
                   </div>
-                  <h1 class="text-6xl font-extrabold leading-[4rem]">A barn house of this design has <br class="lg:block hidden"> striking appearance</h1>
+                  <h1 class="sm:text-6xl text-5xl font-extrabold sm:leading-[4rem]">A barn house of this design has <br class="lg:block hidden"> striking appearance</h1>
                   <p class="text-content-hover font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br class="lg:block hidden"> accents, and large windows that flood the space with natural light.</p>
                   <button class="btn bg-secondary text-base font-extrabold rounded-3xl hover:bg-primary-hover">View Details <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary border-none -rotate-45"></i></button>
                 </div>
@@ -104,5 +105,54 @@
         </div>
     </header>
     <!-- header-area-ends -->
+
+    <main class="main-area">
+      <section class="about-section bg-base-200 my-24 py-24">
+        <div class="container mx-auto">
+          <div class="hero">
+            <div class="hero-content gap-12 flex-col lg:flex-row-reverse mx-3">
+              <div class="flex-1">
+                <img src="images/2.Rectangle.png" class="House"/>
+              </div>
+              <div class="flex-1 space-y-6 sm:mx-8 relative lg:text-left text-center">
+                <div class="lg:block hidden overlay absolute -top-[12%] -left-[8%]">
+                  <img src="images/icons/0.Vector.png" alt="Vector">
+                </div>
+                <span class="font-semibold bg-white py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> About  Us</span>
+                <h1 class="text-4xl font-extrabold text-heading-color">We design thoughtful, <br class="lg:block hidden"> liveable spaces</h1>
+                <p class="text-content-color">The barn house captivates with its blend of rustic charm and modern sophistic, featuring weathered wood, sleek metal accents.</p>
+                
+                <!-- card-1 -->
+                <div class="card bg-white text-left">
+                  <div class="sm:flex items-center gap-5 py-8 px-4">
+                    <div class="cards-image ml-5 mb-2">
+                      <img src="images/icons/1.commercial.png" alt="Commercial Building">
+                    </div>
+                    <div class="cards-caption">
+                      <h2 class="card-title">Commercial</h2>
+                      <p class="text-content-color">The barn house captivates with its blend of  <br class="xl:block hidden"> rustic charm and modern.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="card bg-white text-left">
+                  <div class="sm:flex items-center gap-5 py-8 px-4">
+                    <div class="cards-image ml-5 mb-2">
+                      <img src="images/icons/2.residential.png" alt="Residential Building">
+                    </div>
+                    <div class="cards-caption">
+                      <h2 class="card-title">Commercial</h2>
+                      <p class="text-content-color">The barn house captivates with its blend of  <br class="xl:block hidden"> rustic charm and modern.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about-section-ends -->
+    </main>
 </body>
 </html>
