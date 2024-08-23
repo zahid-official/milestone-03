@@ -45,6 +45,8 @@
             <div class="">
               <h2 class="btn btn-ghost hover:bg-transparent text-4xl font-extrabold"><i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary -rotate-45"></i>Rinterio</h2>
             </div>
+
+            <!-- menu -->
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li><a class="text-content-color font-bold text-base hover:text-heading-color">Home</a></li>
@@ -54,12 +56,14 @@
                 <li><a class="text-content-color font-bold text-base hover:text-heading-color">Contact</a></li>
               </ul>
             </div>
-            <div class="">
-              <div class="sm:flex items-center space-x-3 hidden ">
+
+            <div>
+              <div class="sm:flex items-center space-x-3 hidden">
                 <i class="fa-solid fa-magnifying-glass text-xl border flex justify-center items-center h-8 w-8 rounded-full text-content-color border-none cursor-pointer hover:text-heading-color"></i>
                 <i class="fa-solid fa-cart-shopping text-xl border flex justify-center items-center h-8 w-8 rounded-full text-content-color border-none cursor-pointer hover:text-heading-color"></i>
                 <button class="btn bg-primary text-base font-extrabold rounded-3xl hover:bg-primary-hover">Book Consult <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-button-color text-white border-none -rotate-45"></i></button>
               </div>
+
               <!-- dropdown -->
               <div class="dropdown relative">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -97,7 +101,7 @@
                   </div>
                   <h1 class="sm:text-6xl text-5xl font-extrabold sm:leading-[4rem]">A barn house of this design has <br class="lg:block hidden"> striking appearance</h1>
                   <p class="text-content-hover font-medium">The house of design boasts a striking appearance with its innovative architecture. Combining bold geometric shapes, <br class="lg:block hidden">  and vibrant colors, it captures attention and sparks intrigue.</p>
-                  <button class="btn bg-secondary text-base font-extrabold rounded-3xl hover:bg-primary-hover">View Details <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary border-none -rotate-45"></i></button>
+                  <button class="btn sm:w-fit w-full bg-secondary text-base font-extrabold rounded-3xl hover:bg-primary-hover">View Details <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary border-none -rotate-45"></i></button>
                 </div>
               </div>
             </div>
@@ -110,28 +114,26 @@
       <section class="about-section bg-base-200 py-32">
         <div class="container mx-auto">
           <div class="hero">
-            <div class="hero-content gap-12 flex-col lg:flex-row-reverse mx-3">
-              <div class="flex-1">
-                <img src="images/2.Rectangle.png" class="House"/>
-              </div>
-              <div class="flex-1 space-y-6 sm:mx-8 relative lg:text-left text-center">
+            <div class="flex items-center gap-12 flex-col lg:flex-row mx-6">
+              <!-- grid-item-1 -->
+              <div class="lg:flex-1 w-full space-y-6 sm:mx-8 relative lg:text-left text-center">
                 <div class="lg:block hidden overlay absolute -top-[12%] -left-[8%]">
                   <img src="images/icons/0.Vector.png" alt="Vector">
                 </div>
                 <span class="font-semibold bg-white py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> About  Us</span>
                 <h1 class="text-4xl font-extrabold text-heading-color">We design thoughtful, <br class="lg:block hidden"> liveable spaces</h1>
-                <p class="text-content-color">Design creates thoughtful, livable spaces by blending functionality <br class="lg:block hidden"> with style, ensuring every detail enhances comfort.</p>
+                <p class="text-content-color">Design creates thoughtful, livable spaces by blending functionality with style, ensuring every detail enhances comfort.</p>
                 
                 <!-- card-1 -->
                 <div class="card bg-white text-left">
                   <div class="sm:flex items-center gap-5 py-8 px-4">
-                    <div class="cards-image ml-5 mb-2">
+                    <div class="cards-image sm:ml-5 sm:mb-0 mb-2 flex justify-center">
                       <img src="images/icons/1.commercial.png" alt="Commercial Building">
                     </div>
-                    <div class="cards-caption space-y-3">
-                      <h2 class="card-title">Commercial</h2>
+                    <div class="cards-caption space-y-3 sm:text-left text-center">
+                      <h2 class="text-xl font-bold">Commercial</h2>
                       <p class="text-content-color">
-                        The commercial building showcases a modern design, blending sleek aesthetics with practical functionality.</p>
+                        The commercial building showcases a modern design, blending sleek aesthetics.</p>
                     </div>
                   </div>
                 </div>
@@ -139,21 +141,26 @@
                 <!-- card-2 -->
                 <div class="card bg-white text-left">
                   <div class="sm:flex items-center gap-5 py-8 px-4">
-                    <div class="cards-image ml-5 mb-2">
+                    <div class="cards-image sm:ml-5 sm:mb-0 mb-2 flex justify-center">
                       <img src="images/icons/2.residential.png" alt="Residential Building">
                     </div>
-                    <div class="cards-caption space-y-3">
-                      <h2 class="card-title">Residential</h2>
-                      <p class="text-content-color">The residential building offers stylish design and comfort, blending modern amenities with inviting spaces.</p>
+                    <div class="cards-caption space-y-3 sm:text-left  text-center">
+                      <h2 class="text-xl font-bold">Residential</h2>
+                      <p class="text-content-color">The residential building offers stylish design and comfort, blending modern amenities.</p>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <!-- grid-item-2 -->
+              <div class="lg:flex-1 w-full">
+                <img src="images/2.Rectangle.png" alt="House" class="w-full object-cover"/>
               </div>
             </div>
           </div>
 
           <!-- review -->
-           <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-16 mx-6 bg-white rounded-2xl py-4">
+           <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-5 mt-20 mx-6 bg-white rounded-2xl py-4">
               <!-- card-1 -->
               <div class="card text-center p-6 space-y-2">
                 <i class="fa-regular fa-message text-3xl"></i>
@@ -188,7 +195,7 @@
 
       <section class="work-section bg-base-200 pb-16">
         <div class="container mx-auto py-8">
-          <div class="space-y-6 mb-10 mx-6 text-center">
+          <div class="section-title space-y-6 mb-10 mx-6 text-center">
             <span class="font-semibold bg-white py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> How we works</span>
             <h1 class="text-4xl font-extrabold text-heading-color">Our Works Process</h1>
             <p class="text-content-color">The works process includes detailed planning, strategic execution, and thorough review, <br class="lg:block hidden">ensuring quality and alignment with project goals at every stage.</p>
@@ -236,7 +243,7 @@
       <!-- work-section-ends -->
 
       <section class="portfolio-section py-28 my-10 container mx-auto">
-        <div class="space-y-6 mb-10 mx-6 text-center">
+        <div class="section-title space-y-6 mb-10 mx-6 text-center">
           <span class="font-semibold bg-secondary py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> Explore our Latest works</span>
           <h1 class="text-4xl font-extrabold text-heading-color">Our Latest Portfolio</h1>
           <p class="text-content-color">The latest portfolio showcases recent projects, highlighting innovative designs, <br class="lg:block hidden"> successful outcomes, and a diverse range of expertise.</p>
@@ -247,7 +254,7 @@
           <div class="card justify-center text-left lg:col-span-8 md:col-span-12 border-2">
             <div class="sm:flex items-center gap-8 p-6">
               <img src="images/3.house.png" alt="Commercial Building" class="sm:max-w-fit w-full sm:mb-0 mb-5">
-              <div class="cards-caption space-y-5">
+              <div class="cards-caption space-y-3">
                 <h2 class="text-3xl font-extrabold">Commercial</h2>
                 <p class="text-content-color">Commercial enterprises thrive by meeting customer needs, innovating products, and optimizing supply chains. Effective marketing strategies drive brand recognition and sales growth.</p>
                 <button class="flex gap-2 e font-extrabold text-xl rounded-3xl">View Details <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary border-none -rotate-45"></i></button>
@@ -277,7 +284,7 @@
           <div class="card justify-center text-left lg:col-span-6 md:col-span-12 border-2">
             <div class="sm:flex items-center gap-8 p-6">
               <img src="images/6.house.png" alt="Commercial Building" class="xl:max-w-full lg:max-w-44 sm:max-w-fit w-full  sm:mb-0 mb-5">
-              <div class="cards-caption space-y-5">
+              <div class="cards-caption space-y-3">
                 <h2 class="text-3xl font-extrabold">Residential</h2>
                 <p class="text-content-color">Residential areas offer a unique blend of community life, providing homes for families and individuals. They foster connections, shared experiences.</p>
                 <button class="flex gap-2 e font-extrabold text-xl rounded-3xl">View Details <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-primary border-none -rotate-45"></i></button>
@@ -294,7 +301,7 @@
             </div>
           </div>
 
-          <!-- card-5 -->
+          <!-- card-6 -->
           <div class="lg:hidden card justify-center text-left lg:col-span-3 md:col-span-6 border-2">
             <div class="sm:flex items-center gap-8 p-6">
               <div class="cards-image w-full">
@@ -302,14 +309,13 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
       <!-- portfolio-section-ends -->
 
       <section class="articles-section py-36 bg-base-200">
           <div class="container mx-auto">
-            <div class="space-y-6 mb-10 mx-6 text-center">
+            <div class="section-title space-y-6 mb-10 mx-6 text-center">
               <span class="font-semibold bg-secondary py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> Rinterio News</span>
               <h1 class="text-4xl font-extrabold text-heading-color">Read Our Articles and News</h1>
               <p class="text-content-color">Explore our latest articles and news updates to stay informed on current events and <br class="lg:block hidden">intriguing topics that matter to you. Discover insights!</p>
@@ -369,14 +375,13 @@
       <!-- articles-section-ends -->
 
       <section class="review-section container mx-auto pt-24 mt-10">
-        <div class="space-y-6 mb-10 mx-6 text-center">
+        <div class="section-title space-y-6 mb-10 mx-6 text-center">
           <span class="font-semibold bg-secondary py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> Shared Experiences </span>
           <h1 class="text-4xl font-extrabold text-heading-color">Discover the stories and experiences</h1>
           <p class="text-content-color">Discover the stories and experiences that shape our lives, connecting us through shared <br class="lg:block hidden"> emotions, dreams, challenges, and triumphs on this journey.</p>
         </div>
 
-        <div class="grid lg:grid-cols-5 lg:gap-0 gap-10 mx-4
-        ">
+        <div class="grid lg:grid-cols-5 lg:gap-0 gap-10 mx-6">
           <div class="reviews-area bg-[#18242d] text-white  lg:rounded-l-3xl lg:rounded-r-none rounded-3xl py-28 px-10 space-y-6 lg:col-span-2">
             <span class="font-extrabold">
               <i class="fa-solid fa-star"></i>
@@ -405,7 +410,7 @@
                   </div>
                 </div>
               </div>
-
+              <!-- indicators -->
               <div class="absolute left-5 right-5 top-1/2 h-full items-end flex gap-3 flex-col justify-end -translate-y-1/2 transform">
                 <a href="#slide3" class="btn btn-circle bg-white rounded-xl">❮</a>
                 <a href="#slide2" class="btn mb-5 btn-circle bg-white rounded-xl">❯</a>
@@ -425,7 +430,7 @@
                   </div>
                 </div>
               </div>
-
+              <!-- indicators -->
               <div class="absolute left-5 right-5 top-1/2 h-full items-end flex gap-3 flex-col justify-end -translate-y-1/2 transform">
                 <a href="#slide1" class="btn btn-circle bg-white rounded-xl">❮</a>
                 <a href="#slide3" class="btn mb-5 btn-circle bg-white rounded-xl">❯</a>
@@ -445,7 +450,7 @@
                   </div>
                 </div>
               </div>
-
+              <!-- indicators -->
               <div class="absolute left-5 right-5 top-1/2 h-full items-end flex gap-3 flex-col justify-end -translate-y-1/2 transform">
                 <a href="#slide2" class="btn btn-circle bg-white rounded-xl">❮</a>
                 <a href="#slide1" class="btn mb-5 btn-circle bg-white rounded-xl">❯</a>
@@ -457,7 +462,7 @@
       <!-- review-section-ends -->
 
       <section class="faq-section container mx-auto py-28 my-8">
-        <div class="space-y-6 mb-10 mx-6 text-center">
+        <div class="section-title space-y-6 mb-10 mx-6 text-center">
           <span class="font-semibold bg-secondary py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> Feel Free to Ask </span>
           <h1 class="text-4xl font-extrabold text-heading-color">Frequently Asked Questions</h1>
           <p class="text-content-color">Explore our FAQs for info on scheduling tours, applying online, checking application status,<br class="lg:block hidden"> accessing virtual tours, paying rent, and contacting management.</p>
@@ -541,7 +546,7 @@
 
       <section class="connect-section py-32 bg-[url('images/0.background.jpg')] bg-no-repeat bg-cover">
           <div class="container mx-auto">
-            <div class="space-y-6 mb-10 mx-6 text-center">
+            <div class="section-title space-y-6 mb-10 mx-6 text-center">
               <span class="font-semibold bg-secondary py-2 px-4 rounded-3xl"><i class="fa-solid fa-arrow-right mr-1"></i> Let’s Connect</span>
               <h1 class="text-4xl font-extrabold text-heading-color">Let’s Discuss Next Project</h1>
               <p class="text-content-color">Let’s discuss the next project: defining objectives, setting timelines, and allocating <br class="lg:block hidden">resources to ensure successful implementation and achievement of goals.</p>
@@ -550,12 +555,9 @@
             <form action="" class="lg:w-2/3 mx-auto p-5 grid sm:grid-cols-2 gap-8">
               <input type="text" placeholder="First Name*" class="input w-full rounded-3xl" />
               <input type="text" placeholder="Last Name*" class="input  w-full rounded-3xl" />
-
               <input type="text" placeholder="Phone Number*" class="input w-full rounded-3xl" />
               <input type="email" placeholder="Email Address*" class="input input-bordered w-full rounded-3xl" />
-
               <textarea placeholder="Write your message here" rows="5" class="sm:col-span-2 textarea rounded-3xl textarea-lg w-full"></textarea>
-
               <button type="submit" class="sm:col-span-2 btn bg-primary text-base font-extrabold rounded-3xl border-none hover:bg-primary-hover">Book Consult <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-button-color text-white border-none -rotate-45"></i></button>
             </form>
           </div>
@@ -576,7 +578,7 @@
         <a class="link link-hover text-[#E9E9E9] hover:text-primary">Blogs</a>
         <a class="link link-hover text-[#E9E9E9] hover:text-primary">Contact</a>
       </nav>
-      <button class="btn border-none flex bg-primary text-base font-extrabold rounded-3xl hover:bg-primary-hover">Book Consult <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-button-color text-white border-none -rotate-45"></i></button>
+      <button class="btn sm:w-fit w-full border-none flex bg-primary text-base font-extrabold rounded-3xl hover:bg-primary-hover">Book Consult <i class="fa-solid fa-arrow-right text-xl border flex justify-center items-center h-8 w-8 rounded-full bg-button-color text-white border-none -rotate-45"></i></button>
       <nav>
     </footer>
 </body>
